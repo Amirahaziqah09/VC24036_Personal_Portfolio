@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">MyPortfolio.</div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+            <button class="theme-btn" id="themeBtn">🌙</button>
+
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="projects-container">
+
+        <section class="projects-heading">
+            <h1>My <span>Projects</span></h1>
+            <p>A collection of my academic and technical projects.</p>
+        </section>
+
+        <!-- Project Filter -->
+        <div class="project-filters">
+
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button class="filter-btn" data-filter="automation">Automation</button>
+
+        </div>
+
+        <!-- Project Cards -->
+        <section class="project-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card" data-category="iot">
+
+                <img src="images/project1.jpg"
+                     alt="Smart Chicken Coop Monitoring System">
+
+                <div class="project-content">
+
+                    <span class="project-category">IoT Project</span>
+
+                    <h2>Smart Chicken Coop Monitoring System</h2>
+
+                    <p>
+                        An IoT-based system designed to monitor
+                        temperature and ammonia levels in a chicken coop.
+                        It uses sensors and automated controls to improve
+                        the coop environment.
+                    </p>
+
+                    <h3>My Role</h3>
+                    <p>System development, sensor integration and programming.</p>
+
+                    <h3>Tools Used</h3>
+                    <p>ESP32, DHT22, MQ-137, Relay Module and Blynk.</p>
+
+                    <h3>Outcome</h3>
+                    <p>
+                        Developed an automated monitoring concept
+                        with temperature control and misting functions.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-category="iot">
+
+                <img src="images/project2.jpg"
+                     alt="IoT Sensor Monitoring System">
+
+                <div class="project-content">
+
+                    <span class="project-category">IoT Project</span>
+
+                    <h2>IoT Sensor Monitoring System</h2>
+
+                    <p>
+                        A sensor monitoring system that collects
+                        environmental data and sends the information
+                        to an online dashboard.
+                    </p>
+
+                    <h3>My Role</h3>
+                    <p>Sensor configuration, coding and data monitoring.</p>
+
+                    <h3>Tools Used</h3>
+                    <p>ESP32, DHT22, Arduino IDE and Google Sheets.</p>
+
+                    <h3>Outcome</h3>
+                    <p>
+                        Demonstrated real-time sensor data collection
+                        and online data monitoring.
+                    </p>
+
+                </div>
+
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-category="automation">
+
+                <img src="images/project3.jpg"
+                     alt="Flexible Manufacturing System">
+
+                <div class="project-content">
+
+                    <span class="project-category">Automation Project</span>
+
+                    <h2>Flexible Manufacturing System (FMS)</h2>
+
+                    <p>
+                        An automated car headlamp installation project
+                        using a collaborative robot and programmable
+                        logic controller.
+                    </p>
+
+                    <h3>My Role</h3>
+                    <p>System design, PLC programming and testing.</p>
+
+                    <h3>Tools Used</h3>
+                    <p>TM5-700 COBOT, Omron PLC and CX-Programmer.</p>
+
+                    <h3>Outcome</h3>
+                    <p>
+                        Developed an automated installation process
+                        through robot and PLC integration.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span>
+            Nur Amirah Haziqah. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
